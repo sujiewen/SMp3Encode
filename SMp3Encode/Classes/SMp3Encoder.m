@@ -229,9 +229,9 @@ static SMp3Encoder *globalMp3Encoder;
 }
 
 //
-- (void)finishEncoder:(BOOL)success
+- (void)finishEncoder:(BOOL)success Duration:(NSInteger)duration
 {
-    NSInteger time = 0;
+    NSInteger time = duration;
     if (file) {
         fclose(file);
         
