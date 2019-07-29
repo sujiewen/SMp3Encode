@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SMp3Encode'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'mp3 边录边保存'
 
   s.description      = <<-DESC

@@ -26,4 +26,6 @@
 
 @property (nonatomic, weak) id<SMp3Delegate> delegate;
 
++ (BOOL)convertWavToMp3:(NSString*)wavFilePath withSavePath:(NSString*)savePath;
+
 @end
