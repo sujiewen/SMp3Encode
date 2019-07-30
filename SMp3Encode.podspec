@@ -18,4 +18,5 @@ mp3 录制和转换，边录边保存
   s.frameworks = 'Foundation'
   s.vendored_libraries = 'SMp3Encode/Lame/*.a'
   #s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/SMp3Encode/Lame"' }
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
 end
