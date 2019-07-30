@@ -38,6 +38,7 @@
 		6B839CFF1CF6A942002B1009 /* SMp3Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMp3Encoder.m; sourceTree = "<group>"; };
 		6B839D001CF6A942002B1009 /* SMp3Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMp3Recorder.h; sourceTree = "<group>"; };
 		6B839D011CF6A942002B1009 /* SMp3Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMp3Recorder.m; sourceTree = "<group>"; };
+		BFDE4CB022EFDA780005FFDF /* SMp3Encode.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = SMp3Encode.podspec; path = ../SMp3Encode.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		6B839CD41CF6A923002B1009 = {
 			isa = PBXGroup;
 			children = (
+				BFDE4CB022EFDA780005FFDF /* SMp3Encode.podspec */,
 				6B839CDF1CF6A923002B1009 /* Example */,
 				6B839CDE1CF6A923002B1009 /* Products */,
 				9E6FA212CE577E0B077B49B7 /* Frameworks */,
@@ -356,9 +358,11 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../SMp3Encode/Lame";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunya365.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 arm64e";
 			};
 			name = Debug;
 		};
@@ -372,9 +376,11 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../SMp3Encode/Lame";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunya365.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 arm64e";
 			};
 			name = Release;
 		};
